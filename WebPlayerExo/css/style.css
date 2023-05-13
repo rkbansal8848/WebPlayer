@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+body{
+    font-size: 14px;
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+ font-size: 16px;
+ position: fixed;
+ width: 1500px;
+ top: 0;
+
+ font-family: 'Ubuntu' , 'sans-serif';
+}
+
+nav ul li{
+    cursor: pointer;
+    padding:0 12px;
+}
+
+#homepage:hover,
+#aboutpage:hover {
+  text-decoration: underline;
+}
+
+#previouspage:hover,
+#nextpage:hover {
+  color: darkgrey;
+}
+
+.navigation li:hover{
+    color: black;
+}
+
+nav ul{
+   display: flex;
+    align-items: center;/* Allign item Vertically in flexbox*/
+    list-style-type: none;
+    height:54px;
+    width:200%;
+    background-color: rgb(2, 36, 94);
+    color: white;
+}
+.brand img{
+    padding:0 8px;
+    height: 42px;
+    width: 42px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+.container{
+    min-height:80vh;
+    background-color: rgb(56, 56, 254);
+    color: white;
+    font-family: 'Varela Round','sans-serif'; 
+    display:flex;
+    flex-direction: column;
+    margin:75px auto;
+    width: 65%;
+    border-radius: 10px;
+    padding:30px;
+    /* background-image: url('../extras/backGround.jpg'); */
+    background-size: cover;
+    
+}
+
+.bottom{
+    
+    position: sticky;
+    height: 105px;
+    margin:10px;
+    border-radius: 10px;
+    background-color: black;
+    color:white;
+    bottom: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#myProgressBar{
+    height: 0.7vh;
+    margin: 0 10px;
+    width: 55vw;
+    cursor: pointer;
+
+}
+.songItem{
+height: 45px;
+display:flex;
+align-items: center;
+background-color: rgb(255, 255, 255);
+width:40%;
+color: black;
+margin:6px 0;
+justify-content: space-between;
+border-radius: 10px;
+
+}
+
+.songItem img{
+    width: 40px;
+    margin: 0 3px;
+    border-radius: 8px;
+    
+}
+.timestamp{
+    /* align items works with the flex */
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+   
+}
+.container h3{
+    margin:10px;
+    margin-bottom: 30px;
+}
+.container h4{
+font-family: 'Varela Round','sans-serif';
+color:rgb(247, 177, 177);
+display:flex;
+justify-content: center;
+
+}
+
+.songInfo img{
+    opacity: 0;
+    transition:opacity 0.3s ease-in;
+    height: 30px;
+    width: 100px;
+    
+}
+.songInfo{
+    font-family: 'Varela Round','sans-serif'; 
+    margin-top: 30px;
+    margin-left:20px;
+    position: absolute;
+    left:0;
+}
+.songin{
+    font-size: 13px;
+}
+
+.navigation ul{
+    
+    list-style: none;
+    font-size:18px;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    justify-content: space-between;
+    padding:0 400px;
+    margin-bottom: 40px;
+    /* Horizontally center */
+    /* justify-content: center; */
+    /* Vertically center */ 
+    /* align-items: center;  */
+
+}
+
+.navigation h4{
+    color:blue;
+
+}
+.navigation li{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1250px) {
+   .songItem{
+    font-size:10px;
+   }
+  }
+@media screen and (max-width: 1000px) {
+   .songItem{
+    font-size:9px;
+   }
+  }
+@media screen and (max-width: 700px) {
+   .songItem{
+    font-size:7px;
+   }
+  }
+
+@media screen and (max-width: 580px) {
+   .songItem{
+    width:55%;
+    font-size:6px;
+   }
+  }
+@media screen and (max-width: 300px) {
+   .songItem{
+    width:80%;
+    font-size:6px;
+   }
+  }
+@media screen and (max-width: 950px) {
+    .navigation ul{
+    padding:0 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    }
+  }
+@media screen and (max-width: 480px) {
+   .songItem{
+    font-size:4px;
+   }
+
+  }
+@media screen and (max-width: 1250px) {
+   .songItemPlay{
+    height:20px;
+    
+   }
+  }
+@media screen and (max-width: 700px) {
+   .songItemPlay{
+    height:12px;
+    
+   }
+  }
+@media screen and (max-width: 480px) {
+   .songItemPlay{
+    height:9px;
+    
+   }
+  }
