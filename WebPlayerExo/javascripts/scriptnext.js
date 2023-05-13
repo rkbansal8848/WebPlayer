@@ -25,7 +25,7 @@ aboutpage.addEventListener('click', () => {
 
 
 let bgim = document.querySelector('.container');
-bgim.style.backgroundImage = "url('../extras/backGround1.jpg')";
+bgim.style.backgroundImage = "url('../extras/background1.jpg')";
 
 
 let songs=[
