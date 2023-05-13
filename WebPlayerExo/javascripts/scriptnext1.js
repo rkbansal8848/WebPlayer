@@ -25,7 +25,7 @@ let page2 = document.getElementById('page2');
 let page3 = document.getElementById('page3');
 
 let bgim = document.querySelector('.container');
-bgim.style.backgroundImage = "url('../extras/backGround2.jpg')";
+bgim.style.backgroundImage = "url('../extras/background2.jpg')";
 
 
 let songs = [
